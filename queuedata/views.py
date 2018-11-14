@@ -1,3 +1,4 @@
 from django.shortcuts import render
 
-# Create your views here.
+def lab_list(request):
+    return render(request, 'queuedata/lab_list.html', {})
