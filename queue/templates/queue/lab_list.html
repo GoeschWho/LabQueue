@@ -1,10 +1,10 @@
-{% extends 'queuedata/base.html' %}
+{% extends 'queue/base.html' %}
 
 {% block content %}
     <h1>ECEN 1030 Labs</h1>
     {% for lab in labs %}
         <div class="lab">
-            <p>Lab {{ lab.lab_number }}</p>
+            <p><a href="{% url 'lab_detail' pk=lab.pk %}">Lab {{ lab.lab_number }}</a></p>
         </div>
     {% endfor %}
 {% endblock %}
