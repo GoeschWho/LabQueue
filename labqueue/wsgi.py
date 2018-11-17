@@ -17,7 +17,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'labqueue.settings')
 application = get_wsgi_application()
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-path = os.path.join(BASE_DIR, 'queue')
+path = os.path.join(BASE_DIR, 'myqueue')
 
 if path not in sys.path:
     sys.path.insert(0, path)
