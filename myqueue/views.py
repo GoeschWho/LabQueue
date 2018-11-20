@@ -4,6 +4,10 @@ from .forms import LabForm, PartForm, GroupForm
 from django.contrib.auth.decorators import login_required
 
 
+def home(request):
+    return render(request, 'myqueue/home.html')
+
+
 def lab_list(request):
     labs = Lab.objects.all()
     return render(request, 'myqueue/lab_list.html', {'labs': labs})
