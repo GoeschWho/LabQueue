@@ -5,7 +5,7 @@
     <p>Click your group</p>
     {% for group in groups %}
         <div class="group">
-            <p><a href="{% url 'help_detail' pk=group.pk %}">Bench {{ group.bench }}</a></p>
+            <p><a href="{% url 'help_edit' pk=group.pk %}">Bench {{ group.bench }}</a></p>
         </div>
     {% endfor %}
     <h3><a href="{% url 'help_queue' %}">View the Queue</a></h3>

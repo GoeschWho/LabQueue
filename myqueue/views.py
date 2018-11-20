@@ -125,7 +125,7 @@ def help_list(request):
     return render(request, 'myqueue/help_list.html', {'groups': groups})
 
 
-def help_detail(request, pk):
+def help_edit(request, pk):
     group = get_object_or_404(Group, pk=pk)
     if request.method == "POST":
         form = HelpForm(request.POST, instance=group)
@@ -134,7 +134,12 @@ def help_detail(request, pk):
             #code generated fields
             group.time = timezone.now()
             group.save()
-            return redirect('help_detail', pk=group.pk)
+            #if group.help:
+            if group.help:
+                groups = Group.objects.filter(help=True).order_by('time')
+                return render(request, 'myqueue/help_queue.html', {'groups': groups})
+            else:
+                return redirect('help_edit', pk=group.pk)
     else:
         form = HelpForm(instance=group)
-    return render(request, 'myqueue/group_edit.html', {'form': form})
+    return render(request, 'myqueue/help_edit.html', {'form': form})

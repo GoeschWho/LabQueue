@@ -20,5 +20,5 @@ urlpatterns = [
 
     path('help_queue', views.help_queue, name='help_queue'),
     path('help_list', views.help_list, name='help_list'),
-    path('help/<int:pk>/get_help', views.help_detail, name='help_detail'),
+    path('help/<int:pk>/help_edit', views.help_edit, name='help_edit'),
 ]

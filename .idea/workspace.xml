@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4ba3ee3-edb0-436f-aab2-c95010b37a87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/myqueue/templates/myqueue/help_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myqueue/templates/myqueue/help_queue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myqueue/templates/myqueue/help_edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myqueue/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/myqueue/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myqueue/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/myqueue/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myqueue/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/myqueue/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myqueue/templates/myqueue/group_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/myqueue/templates/myqueue/group_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myqueue/templates/myqueue/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/myqueue/templates/myqueue/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myqueue/templates/myqueue/group_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/myqueue/templates/myqueue/group_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myqueue/templates/myqueue/help_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/myqueue/templates/myqueue/help_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myqueue/templates/myqueue/help_queue.html" beforeDir="false" afterPath="$PROJECT_DIR$/myqueue/templates/myqueue/help_queue.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myqueue/templates/myqueue/lab_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/myqueue/templates/myqueue/lab_edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myqueue/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/myqueue/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myqueue/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/myqueue/views.py" afterDir="false" />
     </list>
@@ -40,27 +38,28 @@
     <session id="1005860842">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="40" />
+          <entry key="HTML" value="49" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="65" />
+          <entry key="Python" value="66" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="710" />
-          <entry key="HTML" value="1721" />
-          <entry key="PLAIN_TEXT" value="643" />
-          <entry key="Python" value="5655" />
+          <entry key="HTML" value="1770" />
+          <entry key="PLAIN_TEXT" value="656" />
+          <entry key="Python" value="5955" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -69,17 +68,17 @@
           <entry key="Django Console" value="82" />
           <entry key="css" value="710" />
           <entry key="gitignore" value="59" />
-          <entry key="html" value="1721" />
-          <entry key="py" value="5573" />
-          <entry key="txt" value="584" />
+          <entry key="html" value="1770" />
+          <entry key="py" value="5873" />
+          <entry key="txt" value="597" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="40" />
-          <entry key="py" value="65" />
+          <entry key="html" value="49" />
+          <entry key="py" value="66" />
         </counts>
       </usages-collector>
     </session>
@@ -87,46 +86,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myqueue/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-                <marker date="1542696550983" expanded="true" signature="89:94" ph="..." />
-                <marker date="1542696550983" expanded="true" signature="500:505" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myqueue/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+            <state relative-caret-position="374">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myqueue/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-                <marker date="1542696262915" expanded="true" signature="99:100" ph="..." />
-                <marker date="1542696262915" expanded="true" signature="99:105" ph="..." />
-                <marker date="1542696262915" expanded="true" signature="207:208" ph="..." />
-                <marker date="1542696262915" expanded="true" signature="207:213" ph="..." />
-                <marker date="1542696262915" expanded="true" signature="311:312" ph="..." />
-                <marker date="1542696262915" expanded="true" signature="311:317" ph="..." />
-                <marker date="1542696262915" expanded="true" signature="421:422" ph="..." />
-                <marker date="1542696262915" expanded="true" signature="421:427" ph="..." />
               </folding>
             </state>
           </provider>
@@ -135,18 +100,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myqueue/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="134" column="39" lean-forward="true" selection-start-line="134" selection-start-column="39" selection-end-line="134" selection-end-column="39" />
+            <state relative-caret-position="317">
+              <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
-                <marker date="1542695626653" expanded="true" signature="266:317" ph="..." />
-                <marker date="1542695626653" expanded="true" signature="368:373" ph="..." />
-                <marker date="1542695626653" expanded="true" signature="876:881" ph="..." />
-                <marker date="1542695626653" expanded="true" signature="1014:1019" ph="..." />
-                <marker date="1542695626653" expanded="true" signature="1481:1486" ph="..." />
-                <marker date="1542695626653" expanded="true" signature="1622:1627" ph="..." />
-                <marker date="1542695626653" expanded="true" signature="2046:2051" ph="..." />
+                <marker date="1542727064945" expanded="true" signature="266:317" ph="..." />
+                <marker date="1542727064945" expanded="true" signature="368:373" ph="..." />
+                <marker date="1542727064945" expanded="true" signature="876:881" ph="..." />
+                <marker date="1542727064945" expanded="true" signature="1014:1019" ph="..." />
+                <marker date="1542727064945" expanded="true" signature="1481:1486" ph="..." />
+                <marker date="1542727064945" expanded="true" signature="1622:1627" ph="..." />
+                <marker date="1542727064945" expanded="true" signature="2046:2051" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/help_edit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -154,44 +128,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/help_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/help_queue.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/group_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="40" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="40" />
+            <state relative-caret-position="119">
+              <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/group_detail.html">
+        <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/help_queue.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+            <state relative-caret-position="153">
+              <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -210,6 +157,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>queuedata</find>
+      <find>help_detail</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\megan\djangogirls</dir>
@@ -235,7 +183,6 @@
         <option value="$PROJECT_DIR$/queue/urls.py" />
         <option value="$PROJECT_DIR$/labqueue/wsgi.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/myqueue/templates/myqueue/lab_edit.html" />
         <option value="$PROJECT_DIR$/myqueue/templates/registration/login.html" />
         <option value="$PROJECT_DIR$/labqueue/urls.py" />
         <option value="$PROJECT_DIR$/labqueue/settings.py" />
@@ -243,20 +190,22 @@
         <option value="$PROJECT_DIR$/myqueue/static/css/myqueue.css" />
         <option value="$PROJECT_DIR$/myqueue/templates/myqueue/lab_list.html" />
         <option value="$PROJECT_DIR$/myqueue/templates/myqueue/lab_detail.html" />
-        <option value="$PROJECT_DIR$/myqueue/templates/myqueue/group_edit.html" />
         <option value="$PROJECT_DIR$/myqueue/templates/myqueue/group_list.html" />
         <option value="$PROJECT_DIR$/myqueue/templates/myqueue/add_part_to_lab.html" />
         <option value="$PROJECT_DIR$/myqueue/templates/myqueue/helpqueue.html" />
         <option value="$PROJECT_DIR$/myqueue/templates/myqueue/home.html" />
         <option value="$PROJECT_DIR$/myqueue/admin.py" />
         <option value="$PROJECT_DIR$/myqueue/templates/myqueue/help.html" />
-        <option value="$PROJECT_DIR$/myqueue/templates/myqueue/help_queue.html" />
-        <option value="$PROJECT_DIR$/myqueue/urls.py" />
-        <option value="$PROJECT_DIR$/myqueue/views.py" />
         <option value="$PROJECT_DIR$/myqueue/forms.py" />
-        <option value="$PROJECT_DIR$/myqueue/templates/myqueue/help_list.html" />
         <option value="$PROJECT_DIR$/myqueue/models.py" />
         <option value="$PROJECT_DIR$/myqueue/templates/myqueue/group_detail.html" />
+        <option value="$PROJECT_DIR$/myqueue/templates/myqueue/group_edit.html" />
+        <option value="$PROJECT_DIR$/myqueue/templates/myqueue/lab_edit.html" />
+        <option value="$PROJECT_DIR$/myqueue/templates/myqueue/help_edit.html" />
+        <option value="$PROJECT_DIR$/myqueue/templates/myqueue/help_list.html" />
+        <option value="$PROJECT_DIR$/myqueue/urls.py" />
+        <option value="$PROJECT_DIR$/myqueue/views.py" />
+        <option value="$PROJECT_DIR$/myqueue/templates/myqueue/help_queue.html" />
       </list>
     </option>
   </component>
@@ -521,7 +470,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542690886879</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Queue working">
+      <created>1542696803436</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1542696803436</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -537,10 +493,9 @@
     <frame x="0" y="0" width="960" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2888889" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29555556" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.3296582" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" weight="0.3296582" />
       <window_info anchor="bottom" id="Version Control" order="2" show_stripe_button="false" />
@@ -549,12 +504,13 @@
       <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.41111112" side_tool="true" weight="0.3351709" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" sideWeight="0.4977778" weight="0.3296582" />
-      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.71" visible="true" weight="0.36493936" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.71" weight="0.36493936" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.5888889" weight="0.3351709" />
+      <window_info anchor="bottom" id="Terminal" order="12" sideWeight="0.5888889" visible="true" weight="0.3351709" />
       <window_info anchor="bottom" id="TODO" order="13" sideWeight="0.38555557" weight="0.3296582" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.3296582" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -611,7 +567,8 @@
     <MESSAGE value="Lab new &amp; edit forms added" />
     <MESSAGE value="LabPart and Group classes added" />
     <MESSAGE value="Navigation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Navigation" />
+    <MESSAGE value="Queue working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Queue working" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/myvenv/Lib/site-packages/django/db/models/base.py">
@@ -631,9 +588,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -699,24 +653,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/lab_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/lab_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="14" lean-forward="true" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/group_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -731,32 +671,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/help.html">
+    <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/help.html" />
+    <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/group_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
-          <caret line="5" column="38" lean-forward="true" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myqueue/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/myqueue/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/myqueue/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
+        <state relative-caret-position="441">
           <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
@@ -772,20 +710,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myqueue/views.py">
+    <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/group_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="134" column="39" lean-forward="true" selection-start-line="134" selection-start-column="39" selection-end-line="134" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-            <marker date="1542695626653" expanded="true" signature="266:317" ph="..." />
-            <marker date="1542695626653" expanded="true" signature="368:373" ph="..." />
-            <marker date="1542695626653" expanded="true" signature="876:881" ph="..." />
-            <marker date="1542695626653" expanded="true" signature="1014:1019" ph="..." />
-            <marker date="1542695626653" expanded="true" signature="1481:1486" ph="..." />
-            <marker date="1542695626653" expanded="true" signature="1622:1627" ph="..." />
-            <marker date="1542695626653" expanded="true" signature="2046:2051" ph="..." />
-          </folding>
+        <state relative-caret-position="204">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -801,38 +729,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/home.html">
+    <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/lab_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="40" />
+        <state relative-caret-position="51">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/group_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myqueue/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/help_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myqueue/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="137" column="25" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+            <marker date="1542727064945" expanded="true" signature="266:317" ph="..." />
+            <marker date="1542727064945" expanded="true" signature="368:373" ph="..." />
+            <marker date="1542727064945" expanded="true" signature="876:881" ph="..." />
+            <marker date="1542727064945" expanded="true" signature="1014:1019" ph="..." />
+            <marker date="1542727064945" expanded="true" signature="1481:1486" ph="..." />
+            <marker date="1542727064945" expanded="true" signature="1622:1627" ph="..." />
+            <marker date="1542727064945" expanded="true" signature="2046:2051" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/help_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
+        <state relative-caret-position="119">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/help_queue.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/group_list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myqueue/templates/myqueue/group_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="57" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="57" />
+          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
         </state>
       </provider>
     </entry>
