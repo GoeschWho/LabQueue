@@ -1,0 +1,12 @@
+{% extends 'myqueue/base.html' %}
+
+{% block content %}
+    <div class="lab">
+        <a class="btn btn-default" href="{% url 'group_edit' pk=group.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        {% if user.is_authenticated %}
+            <a class="btn btn-default" href="{% url 'group_remove' pk=group.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+        {% endif %}
+        <h1>Group at Bench {{ group.bench }}</h1>
+        <p>{{ group.names|linebreaksbr }}</p>
+    </div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'myqueue/base.html' %}
+
+{% block content %}
+    <h1>Lab Groups</h1>
+    {% if user.is_authenticated %}
+        <a href="{%  url 'group_new'%}" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></a>
+    {% endif %}
+    {% for group in groups %}
+        <div class="group">
+            <p><a href="{% url 'group_detail' pk=group.pk %}">Bench {{ group.bench }}</a></p>
+        </div>
+    {% endfor %}
+{% endblock %}

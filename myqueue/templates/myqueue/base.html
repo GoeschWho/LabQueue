@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/segment7" type="text/css"/>
     <link rel="stylesheet" href="{% static 'css/myqueue.css' %}">
     <meta charset="UTF-8">
     <title>LabQueue</title>
@@ -12,6 +13,11 @@
 <body>
     <div class="page-header">
         <h1><a href="/">LabQueue</a></h1>
+        {% if user.is_authenticated %}
+            <p class="top-menu">Hello {{ user.username }} | <a href="{% url 'logout' %}">Log out</a></p>
+        {% else %}
+            <a href="{% url 'login' %}" class="top-menu"><span class="glyphicon glyphicon-lock"></span></a>
+        {% endif %}
     </div>
     <div class="content container">
         <div class="row">
@@ -20,6 +26,9 @@
             {% endblock %}
             </div>
         </div>
+    </div>
+    <div class="page-footer">
+        <p class="quote">Quote of the Week: "Should I do blah? Try blah and see." - Jeremy Howard</p>
     </div>
 </body>
 </html>

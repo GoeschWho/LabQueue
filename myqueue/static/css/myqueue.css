@@ -1,5 +1,10 @@
 
 
+@font-face {
+    font-family: 'Segment7Standard';
+    unicode-range: U+30-39;
+}
+
 .page-header {
     background-color: black;
     margin-top: 0;
@@ -13,6 +18,21 @@
     text-decoration: none;
 }
 
+.page-footer {
+    background-color: gray;
+    margin-top: 0;
+    padding: 0.5em 0.5em 0.5em 2em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+.top-menu {
+    color: white;
+}
+
 h1 {
     color: blue;
     #font-weight: bold;
@@ -24,4 +44,8 @@ h1 {
 
 .lab {
     margin-bottom: 0.5em;
+}
+
+.part {
+    margin: 1em 0em 1em 1em;
 }

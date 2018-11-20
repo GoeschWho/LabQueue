@@ -3,11 +3,11 @@
 {% block content %}
     <h1>ECEN 1030 Labs</h1>
     {% if user.is_authenticated %}
-        <a href="{%  url 'lab_new'%}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+        <a href="{%  url 'lab_new'%}" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></a>
     {% endif %}
     {% for lab in labs %}
         <div class="lab">
-            <p><a href="{% url 'lab_detail' pk=lab.pk %}">Lab {{ lab.lab_number }}</a></p>
+            <p><a href="{% url 'lab_detail' pk=lab.pk %}">Lab {{ lab.number }}</a> - {{ lab.parts.count }} parts</p>
         </div>
     {% endfor %}
 {% endblock %}

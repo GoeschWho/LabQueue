@@ -4,8 +4,21 @@
     <div class="lab">
         {% if user.is_authenticated %}
             <a class="btn btn-default" href="{% url 'lab_edit' pk=lab.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+            <a class="btn btn-default" href="{% url 'lab_remove' pk=lab.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
         {% endif %}
-        <h2>{{ lab.title }}</h2>
-        <p>{{ lab.lab_name|linebreaksbr }}</p>
+        <h1>Lab {{ lab.number }}</h1>
+        <p>{{ lab.name|linebreaksbr }}</p>
     </div>
+    <hr>
+    <h2>Parts:</h2>
+    {% if user.is_authenticated %}
+        <a class="btn btn-default" href="{% url 'add_part_to_lab' pk=lab.pk %}">Add part</a>
+    {% endif %}
+    {% for part in lab.parts.all %}
+        <div class="part">
+            <p>{{ part.name|linebreaks }}</p>
+        </div>
+    {% empty %}
+        <p>No parts defined yet :(</p>
+    {% endfor %}
 {% endblock %}
