@@ -1,7 +1,8 @@
 from .models import Lab, Group
 from django.shortcuts import render, get_object_or_404, redirect
-from .forms import LabForm, PartForm, GroupForm
+from .forms import LabForm, PartForm, GroupForm, HelpForm
 from django.contrib.auth.decorators import login_required
+from django.utils import timezone
 
 
 def home(request):
@@ -112,3 +113,28 @@ def group_remove(request, pk):
     group = get_object_or_404(Group, pk=pk)
     group.delete()
     return redirect('group_list')
+
+
+def help_queue(request):
+    groups = Group.objects.filter(help=True).order_by('time')
+    return render(request, 'myqueue/help_queue.html', {'groups': groups})
+
+
+def help_list(request):
+    groups = Group.objects.all()
+    return render(request, 'myqueue/help_list.html', {'groups': groups})
+
+
+def help_detail(request, pk):
+    group = get_object_or_404(Group, pk=pk)
+    if request.method == "POST":
+        form = HelpForm(request.POST, instance=group)
+        if form.is_valid():
+            group = form.save(commit=False)
+            #code generated fields
+            group.time = timezone.now()
+            group.save()
+            return redirect('help_detail', pk=group.pk)
+    else:
+        form = HelpForm(instance=group)
+    return render(request, 'myqueue/group_edit.html', {'form': form})

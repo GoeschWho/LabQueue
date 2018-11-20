@@ -9,4 +9,5 @@
         <h1>Group at Bench {{ group.bench }}</h1>
         <p>{{ group.names|linebreaksbr }}</p>
     </div>
+    <h3><a href="{% url 'group_list' %}">Return to Groups</a></h3>
 {% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'myqueue/base.html' %}
+
+{% block content %}
+    <h1>Get Help</h1>
+    <p>Click your group</p>
+    {% for group in groups %}
+        <div class="group">
+            <p><a href="{% url 'help_detail' pk=group.pk %}">Bench {{ group.bench }}</a></p>
+        </div>
+    {% endfor %}
+    <h3><a href="{% url 'help_queue' %}">View the Queue</a></h3>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'myqueue/base.html' %}
+
+{% block content %}
+    <h1>Lab Help Queue</h1>
+    {% for group in groups %}
+        <div class="group">
+            <p>Bench {{ group.bench }}</p>
+        </div>
+    {% endfor %}
+    <h3><a href="{% url 'help_list' %}">Get Help</a></h3>
+{% endblock %}

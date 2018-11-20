@@ -22,3 +22,10 @@ class GroupForm(forms.ModelForm):
     class Meta:
         model = Group
         fields = ('bench', 'names')
+
+
+class HelpForm(forms.ModelForm):
+
+    class Meta:
+        model = Group
+        fields = ('help',)
