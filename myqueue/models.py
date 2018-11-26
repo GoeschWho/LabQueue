@@ -21,8 +21,10 @@ class LabPart(models.Model):
 class Group(models.Model):
     bench = models.IntegerField()
     names = models.TextField(blank=True)
+    part = models.ForeignKey('myqueue.LabPart', on_delete=models.CASCADE, related_name='groups', blank=True, null=True)
     help = models.BooleanField(default=False)
     time = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
         return "Bench " + str(self.bench)
+

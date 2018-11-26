@@ -136,8 +136,7 @@ def help_edit(request, pk):
             group.save()
             #if group.help:
             if group.help:
-                groups = Group.objects.filter(help=True).order_by('time')
-                return render(request, 'myqueue/help_queue.html', {'groups': groups})
+                return redirect('help_queue')
             else:
                 return redirect('help_edit', pk=group.pk)
     else:

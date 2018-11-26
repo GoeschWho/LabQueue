@@ -49,3 +49,7 @@ h1 {
 .part {
     margin: 1em 0em 1em 1em;
 }
+
+.notice {
+    color: blue;
+}
