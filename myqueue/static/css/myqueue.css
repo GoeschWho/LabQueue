@@ -50,6 +50,6 @@ h1 {
     margin: 1em 0em 1em 1em;
 }
 
-.notice {
-    color: blue;
+#bold {
+    font-weight: bold;
 }

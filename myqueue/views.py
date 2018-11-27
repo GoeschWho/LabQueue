@@ -3,6 +3,7 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .forms import LabForm, PartForm, GroupForm, HelpForm
 from django.contrib.auth.decorators import login_required
 from django.utils import timezone
+from django.http import JsonResponse
 
 
 def home(request):

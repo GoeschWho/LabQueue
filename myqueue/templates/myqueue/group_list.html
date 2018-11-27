@@ -2,6 +2,7 @@
 
 {% block content %}
     <h1>Lab Groups</h1>
+    <p>Click your bench number: (red # located on top drawer of bench)</p>
     {% if user.is_authenticated %}
         <a href="{%  url 'group_new'%}" class="btn btn-default"><span class="glyphicon glyphicon-plus"></span></a>
     {% endif %}

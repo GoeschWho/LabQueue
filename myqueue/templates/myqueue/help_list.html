@@ -2,7 +2,7 @@
 
 {% block content %}
     <h1>Get Help</h1>
-    <p>Click your bench number (red # located on top drawer of bench):</p>
+    <p>Click your bench number: (red # located on top drawer of bench)</p>
     {% for group in groups %}
         <div class="group">
             <p><a href="{% url 'help_edit' pk=group.pk %}">Bench {{ group.bench }}</a></p>
