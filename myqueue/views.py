@@ -143,3 +143,8 @@ def help_edit(request, pk):
     else:
         form = HelpForm(instance=group)
     return render(request, 'myqueue/help_edit.html', {'form': form})
+
+
+def status_list(request):
+    groups = Group.objects.all()
+    return render(request, 'myqueue/status_list.html', {'groups': groups})
