@@ -28,4 +28,4 @@ class HelpForm(forms.ModelForm):
 
     class Meta:
         model = Group
-        fields = ('help','part','status')
+        fields = ('help', 'part', 'status')

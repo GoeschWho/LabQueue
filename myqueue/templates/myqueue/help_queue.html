@@ -4,7 +4,7 @@
     <h1>Lab Help Queue</h1>
     {% for group in groups %}
         <div class="group">
-            <p>Bench {{ group.bench }} : {{ group.names }} : {{ group.part }} : {{ group.status }}</p>
+            <p>Pos {{ group.position }} :: Bench {{ group.bench }} : {{ group.names }} : {{ group.part }} : {{ group.status }}</p>
         </div>
     {% endfor %}
     <h3><a href="{% url 'help_list' %}">Change Help Status</a></h3>

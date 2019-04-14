@@ -25,6 +25,22 @@ class Group(models.Model):
     status = models.ForeignKey('myqueue.Status', on_delete=models.CASCADE, related_name='groups', blank=True, null=True)
     help = models.BooleanField(default=False)
     time = models.DateTimeField(default=timezone.now)
+    position = models.IntegerField(default=0)
+
+    def list_add(self):
+        # add to end of list
+        self.position = Group.objects.filter(help=True).count()
+        self.save()
+
+    def list_remove(self):
+        # remove from list
+        groups = Group.objects.all()
+        for group in groups:
+            if group.position > self.position:
+                group.position = group.position - 1
+                group.save()
+        self.position = 0
+        self.save()
 
     def __str__(self):
         return "Bench " + str(self.bench)

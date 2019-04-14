@@ -117,7 +117,7 @@ def group_remove(request, pk):
 
 
 def help_queue(request):
-    groups = Group.objects.filter(help=True).order_by('time')
+    groups = Group.objects.filter(help=True).order_by('position')
     return render(request, 'myqueue/help_queue.html', {'groups': groups})
 
 
@@ -132,13 +132,15 @@ def help_edit(request, pk):
         form = HelpForm(request.POST, instance=group)
         if form.is_valid():
             group = form.save(commit=False)
-            #code generated fields
+            # code generated fields
             group.time = timezone.now()
             group.save()
-            #if group.help:
             if group.help:
+                if group.position == 0: # not already in queue (re-saved)
+                    group.list_add()
                 return redirect('help_queue')
             else:
+                group.list_remove()
                 return redirect('help_edit', pk=group.pk)
     else:
         form = HelpForm(instance=group)
